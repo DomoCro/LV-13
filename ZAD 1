@@ -1,0 +1,21 @@
+#include <stdio.h>
+enum dani{pon=1,uto,sri,cet,pet,sub,ned
+};
+
+int main(void){
+    
+   enum dani x;
+    
+    do{
+        scanf("%d",&x);
+    }while(x<pon || x>ned);
+    
+    printf("REZULTATI:\n");
+    if(x == sub || x==ned){
+        printf("Vikeeeend!");
+    }else{
+        printf("Radis jos %d dana do vikenda.",5-x);
+    }
+    
+    return 0;
+}
